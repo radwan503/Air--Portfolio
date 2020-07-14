@@ -1,0 +1,34 @@
+ <div class="service">
+                <h3 class="title mb-30"><a href="#"><i class="fa fa-rocket" aria-hidden="true"></i> My Service</a></h3>
+                <hr>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="service-detail"> <i class="fa fa-html5" aria-hidden="true"></i>
+                            <h4>Web Design</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-detail"> <i class="fa fa-code" aria-hidden="true"></i>
+                            <h4>Web Development</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-detail"> <i class="fa fa-mobile" aria-hidden="true"></i>
+                            <h4>Responsive</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-detail"> <i class="fa fa-creative-commons" aria-hidden="true"></i>
+                            <h4>Clean Code</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some</p>
+                        </div>
+                    </div>
+                </div>
+            </div>

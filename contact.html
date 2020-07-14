@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Radwan Ahmed Anik||Portfolio</title>
-      
+
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style_all.css">
-    <link rel="stylesheet" href="css/responsive.css"> </head>
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
 
 <body>
     <div class="wrapper">
@@ -20,16 +21,21 @@
         <nav id="sidebar">
             <div class="sidebar-header">
                 <div class="navbar-brand">
-                    <a href="#"><img src="image/logo/Capture.PNG"></a>
+                    <a href="#"><img src="image/logo/logo2.png"></a>
                 </div>
             </div>
             <ul class="list-unstyled components">
-                <li> <a href="index.html"><i class="fa fa-university" aria-hidden="true"></i> Home</a> </li>
-                <li> <a href="about_me.html"><i class="fa fa-cogs" aria-hidden="true"></i> About Me</a> </li>
-                <li> <a href="myskill.html"><i class="fa fa-thermometer-full" aria-hidden="true"></i> Skill</a> </li>
-                <li> <a href="portfolio.html"><i class="fa fa-ravelry" aria-hidden="true"></i>Portfolio</a> </li>
-                <li> <a href="timeline.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Timeline</a> </li>
-                <li> <a href="contact.html"><i class="fa fa-paper-plane" aria-hidden="true"></i> Contact</a> </li>
+                <li> <a href="index.html"><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>Home</a></li>
+                <li> <a href="about_me.html"><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>About
+                        Me</a> </li>
+                <li> <a href="myskill.html"><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>Skill</a>
+                </li>
+                <li> <a href="portfolio.html"><span><i class="fa fa-caret-right"
+                                aria-hidden="true"></i></span>Portfolio</a> </li>
+                <li> <a href="timeline.html"><span><i class="fa fa-caret-right"
+                                aria-hidden="true"></i></span>Timeline</a> </li>
+                <li> <a href="contact.html"><span><i class="fa fa-caret-right" aria-hidden="true"></i></span>Contact</a>
+                </li>
             </ul>
         </nav>
         <!-- Page Content Holder -->
@@ -37,7 +43,8 @@
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <button type="button" id="sidebarCollapse" class="navbar-btn"> <span></span> <span></span> <span></span> </button>
+                        <button type="button" id="sidebarCollapse" class="navbar-btn"> <span></span> <span></span>
+                            <span></span> </button>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
@@ -47,61 +54,77 @@
                 </div>
             </nav>
             <div class="contact-part">
-                <div class="row">
-                    <div class="col-md-12">
+                <form id="contact-form" method="post" action="contact.php" role="form">
+                    <div class="messages"></div>
+                    <div class="controls">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="con-part">
-                                    <a href="#">
-                                        <div class="icon"> <img src="image/upwork.png" class="img-responsive"> </div>
-                                        <p>Hire Me on Upwork</p>
-                                        <button type="button" class="btn btn-success">Hire Me</button>
-                                    </a>
+                                <div class="form-group">
+                                    <label for="form_name">Firstname *</label>
+                                    <input id="form_name" type="text" name="name" class="form-control"
+                                        placeholder="Please enter your firstname *" required="required"
+                                        data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="con-part">
-                                    <a href="#">
-                                        <div class="icon"> <img src="image/fiverr.png" class="img-responsive"> </div>
-                                        <p>Hire Me on Fiverr</p>
-                                        <button type="button" class="btn btn-success">Hire Me</button>
-                                    </a>
+                                <div class="form-group">
+                                    <label for="form_lastname">Lastname *</label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control"
+                                        placeholder="Please enter your lastname *" required="required"
+                                        data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="con-part">
-                                    <div class="icon"> <i class="fa fa-phone-square" aria-hidden="true"></i> </div>
-                                    <div class="phone-details">
-                                        <h4>My Phone</h4>
-                                        <p>01796226729</p>
-                                    </div>
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control"
+                                        placeholder="Please enter your email *" required="required"
+                                        data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="con-part">
-                                    <div class="icon"> <i class="fa fa-envelope" aria-hidden="true"></i> </div>
-                                    <div class="phone-details">
-                                        <h4>Email</h4>
-                                        <p>radwancse503@gmail.com</p>
-                                    </div>
+                                <div class="form-group">
+                                    <label for="form_need">Please specify your need *</label>
+                                    <select id="form_need" name="need" class="form-control" required="required"
+                                        data-error="Please specify your need.">
+                                        <option value=""></option>
+                                        <option value="Request quotation">Request quotation</option>
+                                        <option value="Request order status">Request order status</option>
+                                        <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="con-part">
-                            <div class="icon"> <i class="fa fa-map-marker" aria-hidden="true"></i> </div>
-                            <div class="phone-details">
-                                <h4>Loacation</h4>
-                                <p>Savar,Dhaka,Bangladesh</p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message *</label>
+                                    <textarea id="form_message" name="message" class="form-control"
+                                        placeholder="Message for me *" rows="4" required="required"
+                                        data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
                             </div>
-                            <p>If you have a great project in mind and are looking for some professional, talented people to work with, then Knock Me Email Or Social Site. I’ ll get back to you very soon to discuss your project and provide you with a custom proposal.</p>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-success btn-send" value="Send message">
+                            </div>
                         </div>
-                        <div class="con-part"> <a href="https://www.linkedin.com/in/radwan-ahmed-7b48b5106/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> <a href="https://twitter.com/RadwanAnik"><i class="fa fa-twitter-square" aria-hidden="true"></i></a> <a href="https://www.facebook.com/anik503"><i class="fa fa-facebook-square" aria-hidden="true"></i></a> <a href="https://plus.google.com/u/0/104011875549861368306"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a> <a href="https://www.youtube.com/channel/UCtNrVQrIWbE4C9G1vRsBpKQ/playlists"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
-                        <a href="#">You Knock Me Also Social Site </a>
-                          </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted">
+                                    <strong>*</strong> These fields are required.</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+
+                </form>
             </div>
         </div>
     </div>
